@@ -2,7 +2,6 @@ public class CandidateTriggerLogic
 {
     public static void beforeInsert(List<Candidate_ashish__c> candidateList)
     {
-        
         // Expected Salary field is missing
         for(Candidate_ashish__c candidateObject : candidateList)   				// write diffrent classes for each method
         {
