@@ -4,7 +4,6 @@ trigger CandidateTrigger on Candidate_ashish__c (before insert,after insert,afte
     {
         CandidateTriggerLogic.beforeInsert(Trigger.New); 
     }
-    
     if(Trigger.isAfter && Trigger.isUpdate)
     {
         CandidateTriggerLogic.afterUpdate(Trigger.New, Trigger.OldMap);
